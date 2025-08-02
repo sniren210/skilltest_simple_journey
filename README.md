@@ -103,8 +103,8 @@ flutter pub get
 
 ```xml
 <uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_MEDIA_IMAGES" />
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 <uses-permission android:name="android.permission.NFC" />
@@ -199,23 +199,6 @@ flutter run
 4. **NFC Reader**: Interactive reading simulation
 5. **Results**: Comprehensive data visualization
 
-## 🧪 Testing
-
-### Manual Testing
-
-- Test each verification step independently
-- Verify error handling with invalid inputs
-- Test permission flows on fresh install
-- Validate UI responsiveness across devices
-
-### Test Scenarios
-
-1. **Happy Path**: Complete all steps successfully
-2. **Permission Denied**: Handle missing permissions gracefully
-3. **Invalid MRZ**: Test with non-passport documents
-4. **Biometric Failure**: Handle authentication failures
-5. **NFC Unavailable**: Graceful degradation for non-NFC devices
-
 ## 🔐 Security Considerations
 
 ### Data Protection
@@ -249,23 +232,6 @@ flutter build appbundle --release
 ```bash
 flutter build ios --release
 ```
-
-## 🔄 Future Enhancements
-
-### Planned Features
-
-- **Cloud Storage**: Secure document backup
-- **Multiple Document Types**: ID cards, driver's licenses
-- **Advanced OCR**: Enhanced text recognition accuracy
-- **Real NFC**: Actual document chip reading
-- **Analytics**: Usage tracking and performance metrics
-
-### Technical Improvements
-
-- **Unit Tests**: Comprehensive test coverage
-- **Integration Tests**: End-to-end workflow testing
-- **Performance**: Image processing optimization
-- **Offline Mode**: Local data processing capabilities
 
 ## 🏆 Evaluation Criteria
 
