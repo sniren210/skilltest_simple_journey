@@ -1,0 +1,54 @@
+name: skilltest_simple_journey
+description: "Mobile Engineer Challenge - OCR, Fingerprint & NFC Reader App"
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Camera and Image Processing
+  camera: ^0.10.5+9
+  image: ^4.1.7
+  path_provider: ^2.1.2
+  path: ^1.8.3
+
+  # OCR and Text Recognition
+  google_mlkit_text_recognition: ^0.11.0
+  google_mlkit_commons: ^0.6.0
+
+  # Biometrics (Fingerprint)
+  local_auth: ^2.1.7
+  local_auth_android: ^1.0.37
+  local_auth_ios: ^1.0.16
+
+  # NFC
+  nfc_manager: ^3.3.0
+
+  # State Management and Utils
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+
+  # UI Components
+  cupertino_icons: ^1.0.6
+  lottie: ^3.1.0
+  flutter_svg: ^2.0.10+1
+
+  # Permissions
+  permission_handler: ^11.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
