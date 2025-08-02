@@ -18,7 +18,6 @@ This mobile application implements a complete document verification system with 
 - **Biometric Authentication**: Secure fingerprint and face recognition
 - **NFC Document Reading**: Simulated document chip data extraction
 - **Data Validation**: Cross-verification between MRZ, biometric, and NFC data
-- **Results Export**: JSON and CSV export capabilities
 
 ### Technical Features
 

@@ -360,17 +360,6 @@ class ResultsScreen extends StatelessWidget {
         
         SizedBox(
           width: double.infinity,
-          child: OutlinedButton.icon(
-            onPressed: () => _exportData(context, appProvider),
-            icon: const Icon(Icons.download),
-            label: const Text('Export Data'),
-          ),
-        ),
-        
-        const SizedBox(height: AppConstants.paddingM),
-        
-        SizedBox(
-          width: double.infinity,
           child: TextButton.icon(
             onPressed: () => _resetAndRestart(context, appProvider),
             icon: const Icon(Icons.refresh),
